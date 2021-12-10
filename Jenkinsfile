@@ -34,7 +34,7 @@ node {
     stage('Run App'){
        /* sh "docker rm $containerName -f"
         sh "docker pull $dockerHubUser/$containerName"
-        sh "docker run -d --rm -p $httpPort:$httpPort --name $containerName $dockerHubUser/$containerName:$tag"
+        sh "docker run -d --rm -p $httpPort:$httpPort --name $containerName $dockerHubUser/$containerName:$tag -f counterwebapp/values/dev/values.yaml"
         echo "Application started on port: ${httpPort} (http)"
         */
     }
